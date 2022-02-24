@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+   <div class="main_div">
+       <div class="music_container">
+           <div class="music_player">
+             <span>Now Playing</span>
+            <div class="image_container">    
+                <img src="images/1.jpg" alt="">
+            </div>
+               <h2 id="title">Tu Aake Dekhle</h2>
+               <h3 id="artist">king</h3>
+               
+               <audio src="music/1.mp3"></audio>
+               <div class="progressbar_container" id="progress_container">
+                   <div class="progress_duration_meter">
+                       <div id="current_time">0:00</div>
+                       <div id="duration">2:44</div>
+                   </div>
+                   <div class="progress_div" id="progress_div">
+                       <div class="progress" id="progress"></div>
+                   </div>
+               </div>
+               <div class="music_controls">
+                   <i class="fas fa-backward" id="previous" title="Previous"></i>
+                   <i class="fas fa-play main_button" id="play" title="Play"></i>
+                   <i class="fas fa-forward" id="next" title="Next"></i>
+               </div>
+           </div>
+           <div class="playlist">
+                <div class="header">
+                    <img src="images/logo2.jpg" alt="Record" class="record">
+                    <h1 class="lsb">Playlist</h1>
+                </div>
+               <ul class="song_list">
+                   <li data-src="music/1.mp3" data-name="Tu Aake Dekhle" data-index="0"><span>Tu Aake Dekhle</span><span>02:44</span></li>
+                   <li data-src="music/2.mp3" data-name="Let Me Love You" data-index="1"><span>Let Me Love You</span><span>03:25</span></li>
+                   <li data-src="music/3.mp3" data-name="Bahu Kale Ki" data-index="2"><span>Bahu Kale Ki</span><span></span>04:00</li>
+                   <li data-src="music/4.mp3" data-name="Lover" data-index="3"><span>Lover</span><span>03:07</span></li>
+                   <li data-src="music/1.mp3" data-name="Jattiye Ni" data-index="4"><span>Jattiye Ni</span><span>03:01</span></li>
+                   <li data-src="music/6.mp3" data-name="Blue Eyes" data-index="5"><span>Blue Eyes</span><span>03:41</span></li>
+                   <li data-src="music/7.mp3" data-name="Slow Slow" data-index="6"><span>Slow Slow</span><span>03:40</span></li>
+                   <li data-src="music/8.mp3" data-name="Faded" data-index="7"><span>Faded</span><span>03:32</span></li>
+                   <li data-src="music/9.mp3" data-name="Phulkari" data-index="8"><span>Phulkari</span><span>03:16</span></li>
+                   <li data-src="music/10.mp3" data-name="Rockstar" data-index="9"><span>Rockstar</span><span>03:38</span></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+    <script src="https://kit.fontawesome.com/1a3e3588d3.js" crossorigin="anonymous"></script>
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
